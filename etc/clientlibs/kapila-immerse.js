@@ -8025,7 +8025,7 @@ function loadScript(src) {
         var self = this;
         self.ptags = ko.observableArray([]);
 		function initTags(storyPath){
-            $.ajax({
+           /* $.ajax({
                 type:'GET',
                 contentType: "application/json",
                 url:'/bin/bah/story/tags',
@@ -8036,7 +8036,9 @@ function loadScript(src) {
                     // var json = jQuery.parseJSON(msg);
                     self.ptags(msg.items);
                 }
-            }); 
+            }); */
+            var items = new Array()
+            self.ptags(items)
 		}
 
     	return {
@@ -8359,7 +8361,7 @@ function loadScript(src) {
 			function initStoryMenu(){
 				//source = '/etc/clientlibs/boozallen-immerse/data/stories.json'; 
 				source = '/bin/bah/story/stories' + (immerse.sitePath ? '?storyParentPath=' + immerse.sitePath + '/stories': '');
-				$.ajax({
+				/*$.ajax({
 					url: source,
 					processData: true,
 					data: {},
@@ -8372,7 +8374,16 @@ function loadScript(src) {
 						console.warn('Story Footer: Unable to Load Content \n' + x.responseText);
 						$('.scroll-container ul').append("<li><h2>Story menu did not load, please try again later</h2></li>");
 					}
-				});
+				});*/
+                
+                 
+                $.getJSON("/etc/clientlibs/story_menu.json", function(json) {
+                   // console.log(json); // this will show the info it in firebug console
+                    //var response = new Object()
+                    //response.items = json
+                    console.log(json)
+                    renderMenu(json)
+                });
 			}
 
 			function renderMenu(data){
@@ -8493,7 +8504,7 @@ function loadScript(src) {
 				});
 				$('#global-header-nav').promise().done(function(){
 					$(this).css('position', 'static');
-					$('body').css('background', "url('/etc/clientlibs/boozallen-immerse/img/nav-bg.png') -30px 50% repeat-y rgb(30, 99, 176)");
+					$('body').css('background', "url('/content/images/nav-bg.png') -30px 50% repeat-y rgb(30, 99, 176)");
 				
 				});
 				$('.nav-bg').promise().done(function(){
