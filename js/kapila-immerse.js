@@ -7982,7 +7982,11 @@ function loadScript(src) {
 					self.stories(mappedStories);
 
 				}
-		
+                
+            rawJson = var json = $.getJSON("stories.json");
+            var data = eval("(" +json.responseText + ")");
+            console.log(data)
+            
 				$.ajax({
 					url: source,
 					processData: true,

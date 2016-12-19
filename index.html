@@ -121,7 +121,8 @@ window.twttr = (function (d,s,id) {
   <nav class="intro" id="global-header-nav">
     <ul>
       <li id="nav-1">
-        <a href="/modules/global-elements/immerse-navigation/_jcr_content/">Consulting</a>
+        <!--<a href="/modules/global-elements/immerse-navigation/_jcr_content/">Consulting</a> -->
+          <a href="/stories/sample.html">Consulting</a>
         <section>
           <div class="bar-container">
             <div class="scroll-container">
@@ -131,9 +132,10 @@ window.twttr = (function (d,s,id) {
         </section>
       </li>
       <li id='nav-2'>
-            <a href="javascript:void(0);" data-par='/content/kapila/en_US/modules/global-elements/immerse-navigation/jcr:content/navigation/par-1'>Application Services</a>
+<!--<a href="javascript:void(0);" data-par='/content/kapila/en_US/modules/global-elements/immerse-navigation/jcr:content/navigation/par-1'>Application Services</a>m-->
+<a href="javascript:void(0);" data-par='/stories/sample.html'>Application Services</a>          
             <section>
-              <div class="parbase section text"><h2><a adhocenable="false" href="/consulting">Capabilities</a></h2>
+              <div class="parbase section text"><h2><a adhocenable="false" href="/stories/sample.html">Capabilities</a></h2>
 
 </div>
 
@@ -141,7 +143,7 @@ window.twttr = (function (d,s,id) {
           </li>
 
        <li id='nav-3'>
-            <a href="javascript:void(0);" data-par='/content/boozallen/en_US/modules/global-elements/immerse-navigation/jcr:content/navigation/par-2'>Cloud Solutions</a>
+            <a href="javascript:void(0);" data-par='/content/kapila/en_US/modules/global-elements/immerse-navigation/jcr:content/navigation/par-2'>Cloud Solutions</a>
             <section>
               <div class="parbase section text"><h2><a adhocenable="false" href="/consultants">US Government</a></h2>
 
@@ -152,7 +154,7 @@ window.twttr = (function (d,s,id) {
           </li>
 
        <li id='nav-4'>
-            <a href="javascript:void(0);" data-par='/content/boozallen/en_US/modules/global-elements/immerse-navigation/jcr:content/navigation/par-3'>Business Transformation</a>
+            <a href="javascript:void(0);" data-par='/content/kapila/en_US/modules/global-elements/immerse-navigation/jcr:content/navigation/par-3'>Business Transformation</a>
             <section>
               <div class="parbase section text"><h2><a adhocenable="false" href="/insights">Our Latest Thinking</a></h2>
 
@@ -162,7 +164,7 @@ window.twttr = (function (d,s,id) {
           </li>
 
        <li id='nav-5'>
-            <a href="javascript:void(0);" data-par='/content/boozallen/en_US/modules/global-elements/immerse-navigation/jcr:content/navigation/par-4'>About Us</a>
+            <a href="javascript:void(0);" data-par='/content/kapila/en_US/modules/global-elements/immerse-navigation/jcr:content/navigation/par-4'>About Us</a>
             <section>
               <div class="parbase section text"><h2><a href="/about" adhocenable="false">Organization</a></h2>
 
@@ -199,7 +201,7 @@ window.twttr = (function (d,s,id) {
           </li>
 
        <li id='nav-7'>
-            <a href="javascript:void(0);" data-par='/content/boozallen/en_US/modules/global-elements/immerse-navigation/jcr:content/navigation/par-6'>Contact us</a>
+            <a href="javascript:void(0);" data-par='/content/kapila/en_US/modules/global-elements/immerse-navigation/jcr:content/navigation/par-6'>Contact us</a>
             <section>
               <div class="parbase section text"><h2><a adhocenable="false" href="/careers">Discover Booz Allen</a></h2>
 <ul>
@@ -223,7 +225,7 @@ window.twttr = (function (d,s,id) {
           </li>
 
        <li id='nav-8'>
-            <a href="javascript:void(0);" data-par='/content/boozallen/en_US/modules/global-elements/immerse-navigation/jcr:content/navigation/par-7'>Giving Back</a>
+            <a href="javascript:void(0);" data-par='/content/kapila/en_US/modules/global-elements/immerse-navigation/jcr:content/navigation/par-7'>Giving Back</a>
             <section>
               <div class="parbase section text"><h2><a adhocenable="false" href="http://investors.boozallen.com/glance.cfm">Booz Allen at a Glance</a></h2>
 <ul>
@@ -271,7 +273,8 @@ window.twttr = (function (d,s,id) {
                     <h1>Together</h1>
                     <p class="dateline">August 11, 2016</p>
                     <div class="subtitle"><p></p></div>
-                    <p class="story-button"><a href="/stories/building-our-systems-delivery-workforce.html" class="primary button sideLoad">We can do Great Things</a></p>
+                   <p class="story-button"><a href="/stories/building-our-systems-delivery-workforce.html"
+                    class="primary button sideLoad">We can do Great Things</a></p>
                 </div>
             </div>
             
@@ -310,7 +313,7 @@ window.twttr = (function (d,s,id) {
             var self = this;
             self.story_panel_387112039 = ko.observableArray([]);
             function initTags(storyPath){
-                $.ajax({
+                /*$.ajax({
                     type:'GET',
                     url:'/bin/bah/story/tags',
                     data:'storyPath='+storyPath,
@@ -318,7 +321,9 @@ window.twttr = (function (d,s,id) {
                         var json = jQuery.parseJSON(msg);
                         self.story_panel_387112039(json.items);
                     }
-                }); 
+                }); */
+                var items = new Array();
+                self.story_panel_387112039(items);
             }
 
             return {
@@ -327,8 +332,8 @@ window.twttr = (function (d,s,id) {
 		})();
 
 })(jQuery);
-if("/content/boozallen/en_US/stories/building-our-systems-delivery-workforce"!="")
-    immerse.storyTagsHome.initTags("/content/boozallen/en_US/stories/building-our-systems-delivery-workforce");
+if("/content/kapila/en_US/stories/building-our-systems-delivery-workforce"!="")
+    immerse.storyTagsHome.initTags("/content/kapila/en_US/stories/building-our-systems-delivery-workforce");
 
 </script>
 </div>
@@ -383,7 +388,8 @@ if("/content/boozallen/en_US/stories/building-our-systems-delivery-workforce"!="
             var self = this;
             self.story_panel_1494808683 = ko.observableArray([]);
             function initTags(storyPath){
-                $.ajax({
+                
+                /*$.ajax({
                     type:'GET',
                     url:'/bin/bah/story/tags',
                     data:'storyPath='+storyPath,
@@ -391,7 +397,9 @@ if("/content/boozallen/en_US/stories/building-our-systems-delivery-workforce"!="
                         var json = jQuery.parseJSON(msg);
                         self.story_panel_1494808683(json.items);
                     }
-                }); 
+                }); */
+                var items = new Array();
+                self.story_panel_387112039(items);
             }
 
             return {
@@ -400,8 +408,8 @@ if("/content/boozallen/en_US/stories/building-our-systems-delivery-workforce"!="
 		})();
 
 })(jQuery);
-if("/content/boozallen/en_US/stories/impact-2016"!="")
-    immerse.storyTagsHome.initTags("/content/boozallen/en_US/stories/impact-2016");
+if("/content/kapila/en_US/stories/impact-2016"!="")
+    immerse.storyTagsHome.initTags("/content/kapila/en_US/stories/impact-2016");
 
 </script>
 </div>
@@ -456,7 +464,7 @@ if("/content/boozallen/en_US/stories/impact-2016"!="")
             var self = this;
             self.story_panel_789033855 = ko.observableArray([]);
             function initTags(storyPath){
-                $.ajax({
+                /*$.ajax({
                     type:'GET',
                     url:'/bin/bah/story/tags',
                     data:'storyPath='+storyPath,
@@ -464,7 +472,9 @@ if("/content/boozallen/en_US/stories/impact-2016"!="")
                         var json = jQuery.parseJSON(msg);
                         self.story_panel_789033855(json.items);
                     }
-                }); 
+                }); */
+                var items = new Array();
+                self.story_panel_387112039(items);
             }
 
             return {
@@ -473,8 +483,8 @@ if("/content/boozallen/en_US/stories/impact-2016"!="")
 		})();
 
 })(jQuery);
-if("/content/boozallen/en_US/stories/starts-with-characters"!="")
-    immerse.storyTagsHome.initTags("/content/boozallen/en_US/stories/starts-with-characters");
+if("/content/kapila/en_US/stories/starts-with-characters"!="")
+    immerse.storyTagsHome.initTags("/content/kapila/en_US/stories/starts-with-characters");
 
 </script>
 </div>
@@ -529,7 +539,7 @@ if("/content/boozallen/en_US/stories/starts-with-characters"!="")
             var self = this;
             self.story_panel_7 = ko.observableArray([]);
             function initTags(storyPath){
-                $.ajax({
+               /* $.ajax({
                     type:'GET',
                     url:'/bin/bah/story/tags',
                     data:'storyPath='+storyPath,
@@ -537,7 +547,9 @@ if("/content/boozallen/en_US/stories/starts-with-characters"!="")
                         var json = jQuery.parseJSON(msg);
                         self.story_panel_7(json.items);
                     }
-                }); 
+                }); */
+                var items = new Array();
+                self.story_panel_387112039(items);
             }
 
             return {
@@ -546,8 +558,8 @@ if("/content/boozallen/en_US/stories/starts-with-characters"!="")
 		})();
 
 })(jQuery);
-if("/content/boozallen/en_US/stories/tech-trends-2016"!="")
-    immerse.storyTagsHome.initTags("/content/boozallen/en_US/stories/tech-trends-2016");
+if("/content/kapila/en_US/stories/tech-trends-2016"!="")
+    immerse.storyTagsHome.initTags("/content/kapila/en_US/stories/tech-trends-2016");
 
 </script>
 </div>
@@ -602,7 +614,7 @@ if("/content/boozallen/en_US/stories/tech-trends-2016"!="")
             var self = this;
             self.story_panel_0 = ko.observableArray([]);
             function initTags(storyPath){
-                $.ajax({
+                /*$.ajax({
                     type:'GET',
                     url:'/bin/bah/story/tags',
                     data:'storyPath='+storyPath,
@@ -610,7 +622,13 @@ if("/content/boozallen/en_US/stories/tech-trends-2016"!="")
                         var json = jQuery.parseJSON(msg);
                         self.story_panel_0(json.items);
                     }
-                }); 
+                }); */
+                var items = new Array();
+                items[0] = new Object();
+                items[0].title = "Management Consulting";
+                items[0].name = "management-consulting";
+                items[0].path= "/consulting/management-consulting";
+                self.story_panel_0(items);
             }
 
             return {
@@ -619,8 +637,8 @@ if("/content/boozallen/en_US/stories/tech-trends-2016"!="")
 		})();
 
 })(jQuery);
-if("/content/boozallen/en_US/stories/lights-on"!="")
-    immerse.storyTagsHome.initTags("/content/boozallen/en_US/stories/lights-on");
+if("/content/kapila/en_US/stories/lights-on"!="")
+    immerse.storyTagsHome.initTags("/content/kapila/en_US/stories/lights-on");
 
 </script>
 </div>
@@ -676,7 +694,7 @@ if("/content/boozallen/en_US/stories/lights-on"!="")
             var self = this;
             self.story_panel = ko.observableArray([]);
             function initTags(storyPath){
-                $.ajax({
+               /* $.ajax({
                     type:'GET',
                     url:'/bin/bah/story/tags',
                     data:'storyPath='+storyPath,
@@ -684,7 +702,25 @@ if("/content/boozallen/en_US/stories/lights-on"!="")
                         var json = jQuery.parseJSON(msg);
                         self.story_panel(json.items);
                     }
-                }); 
+                }); */
+                
+                var items = new Array();
+                items[0] = new Object()
+                items[0].title = "strategic-innovation";
+                items[0].name = "/consulting/strategic-innovation";
+                items[0].path= "/consulting/strategic-innovation";
+                
+                items[1] = new Object()
+                items[1].title = "Products";
+                items[1].name = "boozallen-products";
+                items[1].path= "/consulting/products";
+                
+                
+                items[2] = new Object()
+                items[2].title = "Management Consulting";
+                items[2].name = "management-consulting";
+                items[2].path= "/consulting/management-consulting";
+                self.story_panel_0(items);
             }
 
             return {
@@ -693,8 +729,8 @@ if("/content/boozallen/en_US/stories/lights-on"!="")
 		})();
 
 })(jQuery);
-if("/content/boozallen/en_US/stories/essential-partner"!="")
-    immerse.storyTagsHome.initTags("/content/boozallen/en_US/stories/essential-partner");
+if("/content/kapila/en_US/stories/essential-partner"!="")
+    immerse.storyTagsHome.initTags("/content/kapila/en_US/stories/essential-partner");
 
 </script>
 </div>
@@ -750,7 +786,7 @@ if("/content/boozallen/en_US/stories/essential-partner"!="")
             var self = this;
             self.story_panel_5 = ko.observableArray([]);
             function initTags(storyPath){
-                $.ajax({
+               /* $.ajax({
                     type:'GET',
                     url:'/bin/bah/story/tags',
                     data:'storyPath='+storyPath,
@@ -758,17 +794,19 @@ if("/content/boozallen/en_US/stories/essential-partner"!="")
                         var json = jQuery.parseJSON(msg);
                         self.story_panel_5(json.items);
                     }
-                }); 
+                }); */
+                var items = new Array();
+                self.story_panel_387112039(items);
             }
-
+                
             return {
                 initTags: initTags
             };
 		})();
 
 })(jQuery);
-if("/content/boozallen/en_US/stories/safe-launch-safe-landing"!="")
-    immerse.storyTagsHome.initTags("/content/boozallen/en_US/stories/safe-launch-safe-landing");
+if("/content/kapila/en_US/stories/safe-launch-safe-landing"!="")
+    immerse.storyTagsHome.initTags("/content/kapila/en_US/stories/safe-launch-safe-landing");
 
 </script>
 </div>
@@ -823,7 +861,7 @@ if("/content/boozallen/en_US/stories/safe-launch-safe-landing"!="")
             var self = this;
             self.story_panel_2 = ko.observableArray([]);
             function initTags(storyPath){
-                $.ajax({
+                /*$.ajax({
                     type:'GET',
                     url:'/bin/bah/story/tags',
                     data:'storyPath='+storyPath,
@@ -831,7 +869,14 @@ if("/content/boozallen/en_US/stories/safe-launch-safe-landing"!="")
                         var json = jQuery.parseJSON(msg);
                         self.story_panel_2(json.items);
                     }
-                }); 
+                }); */
+                
+                 var items = new Array();
+                items[0] = new Object();
+                items[0].title = "Management Consulting";
+                items[0].name = "management-consulting";
+                items[0].path= "/consulting/management-consulting";
+                self.story_panel_0(items);
             }
 
             return {
@@ -840,8 +885,8 @@ if("/content/boozallen/en_US/stories/safe-launch-safe-landing"!="")
 		})();
 
 })(jQuery);
-if("/content/boozallen/en_US/stories/connected-health"!="")
-    immerse.storyTagsHome.initTags("/content/boozallen/en_US/stories/connected-health");
+if("/content/kapila/en_US/stories/connected-health"!="")
+    immerse.storyTagsHome.initTags("/content/kapila/en_US/stories/connected-health");
 
 </script>
 </div>
@@ -896,7 +941,7 @@ if("/content/boozallen/en_US/stories/connected-health"!="")
             var self = this;
             self.story_panel_3 = ko.observableArray([]);
             function initTags(storyPath){
-                $.ajax({
+               /* $.ajax({
                     type:'GET',
                     url:'/bin/bah/story/tags',
                     data:'storyPath='+storyPath,
@@ -904,7 +949,13 @@ if("/content/boozallen/en_US/stories/connected-health"!="")
                         var json = jQuery.parseJSON(msg);
                         self.story_panel_3(json.items);
                     }
-                }); 
+                }); */
+                 var items = new Array();
+                items[0] = new Object();
+                items[0].title = "Management Consulting";
+                items[0].name = "management-consulting";
+                items[0].path= "/consulting/management-consulting";
+                self.story_panel_0(items);
             }
 
             return {
@@ -913,8 +964,8 @@ if("/content/boozallen/en_US/stories/connected-health"!="")
 		})();
 
 })(jQuery);
-if("/content/boozallen/en_US/stories/perfect-game"!="")
-    immerse.storyTagsHome.initTags("/content/boozallen/en_US/stories/perfect-game");
+if("/content/kapila/en_US/stories/perfect-game"!="")
+    immerse.storyTagsHome.initTags("/content/kapila/en_US/stories/perfect-game");
 
 </script>
 </div>
@@ -970,7 +1021,7 @@ if("/content/boozallen/en_US/stories/perfect-game"!="")
             var self = this;
             self.story_panel_1 = ko.observableArray([]);
             function initTags(storyPath){
-                $.ajax({
+               /* $.ajax({
                     type:'GET',
                     url:'/bin/bah/story/tags',
                     data:'storyPath='+storyPath,
@@ -978,7 +1029,14 @@ if("/content/boozallen/en_US/stories/perfect-game"!="")
                         var json = jQuery.parseJSON(msg);
                         self.story_panel_1(json.items);
                     }
-                }); 
+                }); */
+                
+                 var items = new Array();
+                items[0] = new Object();
+                items[0].title = "Strategic Innovation";
+                items[0].name = "strategic-innovation";
+                items[0].path= "/consulting/strategic-innovation";
+                self.story_panel_0(items);
             }
 
             return {
@@ -987,8 +1045,8 @@ if("/content/boozallen/en_US/stories/perfect-game"!="")
 		})();
 
 })(jQuery);
-if("/content/boozallen/en_US/stories/brilliance-together"!="")
-    immerse.storyTagsHome.initTags("/content/boozallen/en_US/stories/brilliance-together");
+if("/content/kapila/en_US/stories/brilliance-together"!="")
+    immerse.storyTagsHome.initTags("/content/kapila/en_US/stories/brilliance-together");
 
 </script>
 </div>

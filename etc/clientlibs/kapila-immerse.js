@@ -7980,10 +7980,17 @@ function loadScript(src) {
 						function(item) { return new storyVM(item, (data.debug || false)); 
 						});
 					self.stories(mappedStories);
-
 				}
-		
-				$.ajax({
+                
+                $.getJSON("/etc/clientlibs/stories.json", function(json) {
+                   // console.log(json); // this will show the info it in firebug console
+                    var response = new Object()
+                    response.items = json
+                    console.log(response)
+                    self.mapData(response)
+                });
+            
+				/*$.ajax({
 					url: source,
 					processData: true,
 					data: {},
@@ -7994,7 +8001,7 @@ function loadScript(src) {
 					error: function(x,y,z) {
 						console.warn('Story Footer: Unable to Parse Response \n' + x.responseText);
 					}
-				});
+				});*/
 
 			}
 		}
