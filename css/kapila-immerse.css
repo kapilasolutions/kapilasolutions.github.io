@@ -1023,7 +1023,7 @@ nav.set {
 .short-gradient:before {
   content: '';
   display: block;
-  width: calc(100% - 335px);
+  width: calc(100% - 345px);
   min-width: 625px;
   position: fixed;
   height: 60px;
