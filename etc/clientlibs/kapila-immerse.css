@@ -870,12 +870,16 @@ html.android-view header.global-header input.search-input {
     overflow-y: auto;
     top: 83px; }
     #global-header-nav section h2 {
-      text-align: center;
+      text-align: left;
       color: #cccccc;
       margin-bottom: 30px;
       margin-bottom: 1.875rem;
       padding-bottom: 20px;
       padding-bottom: 1.25rem;
+      padding-left: 70px;
+      padding-left: 4.375rem;
+      padding-right: 70px;
+      padding-right: 4.375rem;        
       padding-top: 70px;
       padding-top: 4.375rem;
       font-weight: normal;
@@ -1043,10 +1047,9 @@ nav.set {
   display: none; }
 
 .body-nav-bg {
-  background: url("kapila-immerse/img/nav-bg.png") left repeat-y #1e63b0 !important; }
-
+background: url("kapila-immerse/img/nav-bg.png") left repeat-y #1e63b0 !important; }
 .nav-bg {
-  background: #1a5699;
+ background: #1a5699;
   display: none;
   height: 100%;
   position: absolute;
@@ -1062,7 +1065,8 @@ nav.set {
 .lt-ie9 header.global-header .search.active {
   top: 0px; }
 .lt-ie9 header.global-header {
-   background: #002952 !important; }
+/*   background: #002952 !important; } comment by Seshadri */
+   background: #FFA500 !important; }    
 .lt-ie9 .global-header.home-page {
   background: transparent !important; }
 .lt-ie9 #global-header-nav section {
