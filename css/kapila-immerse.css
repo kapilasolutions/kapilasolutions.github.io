@@ -861,7 +861,8 @@ html.android-view header.global-header input.search-input {
     display: none;
     position: absolute;
     width: 100%;
-    width: calc(100% - 320px);
+    /* width: calc(100% - 320px); commented by Seshadri*/
+    width: calc(100% - 420px);  
     padding-top: 117px;
     min-width: 640px;
     left: 320px;

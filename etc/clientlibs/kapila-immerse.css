@@ -602,7 +602,7 @@ header.global-header {
   header.global-header.home-page {
     /* background-color: rgba(19, 58, 101, 0) !important; */
     background-color: rgba(255, 165, 0, 0)  
-    height: 83px !important;
+    height: 93px !important;
     position: fixed; }
     header.global-header.home-page .search, header.global-header.home-page .logo, header.global-header.home-page .nav-container {
       margin-top: 30px !important; }
