@@ -209,7 +209,7 @@
         }
     }
 
-    getToken();
+    //getToken();
     handleForm(document);
 
     var open = XMLHttpRequest.prototype.open;
